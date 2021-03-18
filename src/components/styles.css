@@ -1,0 +1,277 @@
+/*  */
+.clearMode1{
+    background-color: rgb(255, 255, 255);
+    color: rgb(32, 32, 32);
+}
+.clearMode2{
+    background-color: rgb(235, 235, 235);
+    color: rgb(0, 0, 0);
+}
+
+.darkMode1{
+    background-color: #121212;
+    color: rgb(212, 212, 212);
+}
+.darkMode2{
+    background-color: #1d1c1f;
+    color: rgb(218, 218, 218);
+}
+
+/* home */
+.divHome{
+    min-height: 100vh;
+}
+
+.divCards{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 3%;
+    padding-bottom: 50px;
+    width: 94%;
+    justify-content: space-around;
+}
+
+/* header */
+.header{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    filter: drop-shadow(0px 4px 4px rgba(100, 100, 100, 0.25));
+}
+
+.logo{
+    margin-left: 3%;
+    font-size: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.buttonMode{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.8em 3.2% 0.8em 0;
+    align-items: center
+}
+
+.buttonMode:hover{
+    opacity: 70%;
+}
+
+.textMode{
+    margin-left: 0.6em;
+    font-size: 0.8em;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* filters */
+.topMargin{
+padding-top: 50px;
+padding-bottom: 20px;
+}
+
+.divSearch{
+    margin-left: 3%;
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    filter: drop-shadow(0px 4px 4px rgba(100, 100, 100, 0.25));
+}
+
+.inputSearch{
+    border: none;
+    padding: 0.3em;
+}
+.inputSearch:focus{
+    border: none;
+    outline:none;
+}
+
+.divSelect{
+    margin-right: 3.2%;
+}
+
+.select{
+    margin-left: 0.6em;
+    border: none;
+    padding: 0.3em;
+    filter: drop-shadow(0px 4px 4px rgba(100, 100, 100, 0.25));
+}
+
+.select:focus{
+    border: none;
+    outline:none;
+}
+
+/* countryCard */
+.divCountryCard{
+    width: 250px;
+    margin: 20px;
+    margin-top: 40px;
+    border-radius: 10px;
+    filter: drop-shadow(0px 4px 4px rgba(100, 100, 100, 0.25));
+}
+
+.flagImgCard{
+    width: 250px;
+    height: 175px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.flagImgCard:hover{
+    opacity: 80%;
+}
+
+.infoCountryCard{
+    width: 230px;
+    margin-left: 10px;
+    margin-bottom: 1em;
+}
+
+.NameCard{
+    font-size: 1.3em;
+    font-weight: 700;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+.InfoCard{
+    margin-top: 0.5em;
+    font-size: 1em;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.SpanInfoCard{
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* modalCountry */
+.divModal{
+    position: fixed;
+    /* top: 0;
+    left: 0; */
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    overflow: auto;
+    z-index: 2;
+}
+
+.closeModal{
+    margin-left: 10vw;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border: 0;
+    border-radius: 2px;
+    /* width: 50px; */
+    padding: 0.5em 1em;
+}
+
+.imgModal{
+    width: 80vw;
+    margin-left: 10vw;
+}
+
+.sectionInfoModal{
+    width: 80vw;
+    margin-left: 10vw;
+}
+
+.divInfoModal{
+    margin-bottom: 2em;
+}
+
+.titleBorder{
+    margin-left: 0vw;
+}
+
+.borders{
+    width: 80vw;
+    margin-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2em;
+}
+
+.buttonBorder{
+    padding: 0.5em;
+    border-radius: 2px;
+    margin-right: 0.5em;
+}
+
+
+@media (min-width: 850px) {
+
+/* home */
+.divCards{
+    margin-left: 0;
+    width: 97%;
+    justify-content: space-between;
+}
+
+/* header */
+.logo{
+    font-size: 1.8em;
+}
+
+.textMode{
+    font-size: 0.9em;
+}
+
+/* countryCard */
+.divCountryCard{
+    margin: 0;
+    margin-left: 3%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* modalCountry */
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.closeModal{
+    margin-left: 3%;
+}
+
+.imgModal{
+    width: 600px;
+    height: max-content;
+    margin-left: 3%;
+}
+
+.sectionInfoModal{
+    width: 600px;
+    margin-left: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.NameCard{
+    width: 100%;
+    font-size: 1.5em;
+}
+
+.divInfoModal{
+    width: 50%;
+}
+
+.borders{
+    width: 600px;
+}
+
+
+}
