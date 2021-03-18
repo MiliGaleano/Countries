@@ -56,7 +56,7 @@
 }
 
 .buttonMode:hover{
-    opacity: 70%;
+    opacity: 0.7;
 }
 
 .textMode{
@@ -125,7 +125,7 @@ padding-bottom: 20px;
 }
 
 .flagImgCard:hover{
-    opacity: 80%;
+    opacity: 0.8;
 }
 
 .infoCountryCard{
